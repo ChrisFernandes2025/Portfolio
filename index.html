@@ -1,31 +1,357 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
+
 <head>
-  <title>Chris Fernandes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Christina Fernandes | Front-End Developer</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f7f7;
+            color: #222;
+        }
+
+        header {
+            min-height: 420px;
+            background-color: #222;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0 0 15px;
+        }
+
+        header h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin: 0 0 20px;
+        }
+
+        header p {
+            max-width: 600px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 22px;
+
+            background-color: white;
+            color: #222;
+
+            text-decoration: none;
+            border-radius: 6px;
+
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background-color: #ddd;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 30px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .sobre {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .competencias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .competencia {
+            background-color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .projeto {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+            transition: 0.3s;
+        }
+
+        .projeto:hover {
+            transform: translateY(-5px);
+        }
+
+        .projeto h3 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .projeto p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .projeto-links {
+            margin-top: 20px;
+        }
+
+        .projeto-links a {
+            display: inline-block;
+            margin-right: 10px;
+            margin-top: 5px;
+
+            padding: 10px 16px;
+
+            background-color: #222;
+            color: white;
+
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .projeto-links a:hover {
+            background-color: #555;
+        }
+
+        .contacto {
+            text-align: center;
+        }
+
+        .contacto a {
+            color: #222;
+        }
+
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+
+            header {
+                min-height: 350px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            header h2 {
+                font-size: 20px;
+            }
+
+            section {
+                padding: 50px 20px;
+            }
+
+        }
+
+    </style>
+
 </head>
-<body style="font-family: Arial; text-align: center; background: #f4f4f4;">
 
-  <h1>Chris Fernandes</h1>
-  <p>Estudante de Programação 💻</p>
 
-  <h2>Projetos</h2>
+<body>
 
-  <p>
-    <a href="https://github.com/ChrisFernandes2025">Ver meu GitHub</a>
-  </p>
+<header>
 
-  <p>
-    <a href="#">To-Do List (em breve online)</a>
-  </p>
+    <h1>Christina Fernandes</h1>
 
-  <p>
-  <strong>Lusitile Cerâmica</strong><br>
-  Projeto Front-End responsivo desenvolvido em HTML, CSS e JavaScript.<br><br>
+    <h2>Front-End Developer</h2>
 
-  <a href="https://chrisfernandes2025.github.io/Lusitile-Cer-mica/" target="_blank">Ver projeto</a>
-  |
-  <a href="https://github.com/ChrisFernandes2025/Lusitile-Cer-mica" target="_blank">Ver código</a>
-</p>
+    <p>
+        Apaixonada por tecnologia e desenvolvimento web,
+        focada em transformar ideias em experiências digitais
+        simples, funcionais e responsivas.
+    </p>
+
+    <a class="botao"
+       href="https://github.com/ChrisFernandes2025"
+       target="_blank">
+       Ver GitHub
+    </a>
+
+</header>
+
+
+<section>
+
+    <h2>Sobre mim</h2>
+
+    <div class="sobre">
+
+        <p>
+            Sou Front-End Developer em início de carreira,
+            com formação em desenvolvimento web e interesse
+            contínuo em aprender e evoluir.
+        </p>
+
+        <p>
+            Tenho desenvolvido projetos utilizando HTML,
+            CSS e JavaScript, explorando também tecnologias
+            modernas de desenvolvimento Front-End.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>Competências</h2>
+
+    <div class="competencias">
+
+        <div class="competencia">HTML5</div>
+
+        <div class="competencia">CSS3</div>
+
+        <div class="competencia">JavaScript</div>
+
+        <div class="competencia">Responsive Design</div>
+
+        <div class="competencia">Git</div>
+
+        <div class="competencia">GitHub</div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>Projetos</h2>
+
+    <div class="projetos">
+
+
+        <div class="projeto">
+
+            <h3>Lusitile Cerâmica</h3>
+
+            <p>
+                Website institucional responsivo para uma
+                empresa fictícia do setor da cerâmica.
+            </p>
+
+            <p>
+                Desenvolvido com HTML, CSS e JavaScript,
+                inclui galerias de produtos, cartões interativos,
+                páginas legais e banner de cookies.
+            </p>
+
+            <div class="projeto-links">
+
+                <a href="https://chrisfernandes2025.github.io/Lusitile-Cer-mica/"
+                   target="_blank">
+                   Ver projeto
+                </a>
+
+                <a href="https://github.com/ChrisFernandes2025/Lusitile-Cer-mica"
+                   target="_blank">
+                   Ver código
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="projeto">
+
+            <h3>To-Do List</h3>
+
+            <p>
+                Aplicação desenvolvida para praticar
+                JavaScript e manipulação do DOM.
+            </p>
+
+            <p>
+                Projeto em desenvolvimento.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>Contacto</h2>
+
+    <div class="contacto">
+
+        <p>
+            Estou disponível para oportunidades,
+            projetos e novos desafios na área de desenvolvimento web.
+        </p>
+
+        <p>
+            <a href="https://github.com/ChrisFernandes2025"
+               target="_blank">
+               GitHub
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    © 2026 Christina Fernandes | Front-End Developer
+
+</footer>
 
 </body>
+
 </html>
